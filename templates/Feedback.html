@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    :root {
+      --ccolor: rgba(255, 255, 255, 0.55);
+    }
+
+    @keyframes intro {
+      0% {
+        transform: translateY(500px);
+      }
+
+      50% {
+        transform: rotateX(180deg);
+      }
+    }
+    h3 {
+      margin: 0;
+      font-family: 'Indie Flower', cursive;
+      color: black;
+      font-size: 27px;
+      padding: 10px;
+    }
+    div p {
+      margin: 5px;
+      padding: 1px;
+    }
+
+    .contentpage div {
+      width: fit-content;
+      font-family: 'Indie Flower', cursive;
+      color: black;
+      font-size: 27px;
+      font-weight: 600;
+      background-color: var(--ccolor);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 30px;
+    }
+
+    #comments {
+      transform: translateY(25px);
+      margin: 20px;
+      margin-bottom: 60px;
+
+    }
+    select[name='rating'] {
+      width: 100px;
+      height: 30px;
+      box-shadow: -3px -3px 0px -1px rgba(88, 88, 88, 0.75);
+      border: 2px solid black;
+      color: whitesmoke;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 20px;
+    }
+    textarea[name="message"] {
+      margin: 5vh 1px 1px 10px;
+      padding: 15px;
+      font-size: 20px;
+      border: 2px solid black;
+      color: whitesmoke;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-family: 'Trebuchet MS', 'cursive';
+      transform: translateX(2vw);
+    }
+    button[type="submit"] {
+      margin-bottom: 30px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- linking/importing -->
+
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'Style.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename = 'img src/favicon_io 3/favicon.ico') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Freckle+Face&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename = '/icon/css/all.css') }}">
+
+  <title>Feedback</title>
+</head>
+
+<body>
+
+<!--navbar-->
+<header>
+  <div class="navbar">
+    <!-- link -->
+    <!--Get in touch  -->
+    <div class="social" >
+      <p>Get In Touch </p>
+      <a href="https://www.facebook.com/Mod-Ops-101183981572693/?modal=admin_todo_tour" target="blank"><i
+          class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/themodops/" target="blank"><i class="fab fa-instagram-square"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+    </div>
+
+    <!-- logo and tagline-->
+    <a href="/"><img src="{{ url_for('static', filename = 'img src/logo.png') }}" id="logo" /></a>
+    <a href="/"><img src="{{ url_for('static', filename = 'img src/logotext.png') }}" id="logotxt" /></a>
+
+
+    <!-- menu for mobile -->
+    <div class="menu2"><i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="options2">
+      <a href="/"><i class="fas fa-home"></i> Homepage</a>
+      <a href="/feedback"><i class="far fa-id-badge"></i>  Feedback</a>
+      <a href="/support"><i class="far fa-address-card"></i> About us</a>
+      <!-- CHANGE THIS PLEASE-->
+    </div>
+    
+
+
+    <p id="tagline">Don't <a href="https://idioms.thefreedictionary.com/Killing+Time" id="kill">kill </a>the time,<a href="https://idioms.thefreedictionary.com/invest" id="invest"> invest </a>the time.</p>
+    <br />
+
+    <!-- dropdown  -->
+    <div class="dropdown">
+
+      <P style="word-spacing: 30px;"><i class="fa fa-bars"></i>
+        Menu</P>
+
+      <div class="options">
+        <a id="one" href="/"><i class="fas fa-home"></i> Homepage</a>
+        <a id="two" href="/contact"><i class="far fa-id-badge"></i> Contact us</a>
+        <a id="three" href="/support"><i class="fas fa-hand-holding-usd"> Support us</i></a>
+      </div>
+
+
+
+    </div>
+</header>
+
+<!-- top ends -->
+  <!-- content page -->
+
+  <div class="contentpage">
+
+
+    <div class = "feedback-headings" id="he">
+      <h3>Since you have used our first website, a feedback based on your experience would be extremely beneficial for
+        us and the future users !</h3>
+    </div>
+
+
+    <form action="/feedback" method="post">
+
+      <div class = "feedback-headings" id="he1">
+        What should we call you? <input type="text" name="name" id="">
+      </div>
+
+      <div class = "feedback-headings" id="he2">
+        <p> Would you suggest our website to your friends or relatives? </p>
+
+        <input type="radio" name="name" value="+">Yes ! <i class="far fa-smile-beam"></i>
+        <!-- move the user to the social thing. -->
+        <br>
+
+        <input type="radio" name="name" value="-">No. <i class="far fa-frown"></i>
+
+        <!-- move the user to the feed back -->
+        <br>
+        <input type="radio" name="name" value="/">Maybe <i class="far fa-question-circle"></i>
+        <br>
+        <input type="checkbox" value="More"> more
+      </div>
+
+      <div class = "feedback-headings" id="he3">
+        <p>On a scale of 1-10, how would you rate the games/content ?</p>
+        <select name="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+      <div class = "feedback-headings" id="comments">
+        <p>Any other comments about our website that , you think needs improvement.</p>
+        <textarea cols="35" rows="5" name="message"></textarea><!--here is the type edited -->
+      </div>
+
+      <!-- <p>this is a para</p> -->
+      <button type="submit">Submit</button>
+
+  </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,629 @@
+/* 0px - 500px width screens */
+/* mobiles */
+@media screen and (max-width: 501px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+    background-image: url("./img src/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Roboto", sans-serif;
+  }
+  #logo {
+    display: none;
+    width: 15vw;
+    position: absolute;
+    right: 4vw;
+    bottom: 4vw;
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 0px;
+  }
+  #logotxt {
+    display: block;
+    position: absolute !important;
+    width: 70vw;
+    bottom: 30px;
+  }
+  #gotop {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    transform: translateY(10px);
+  }
+  
+
+  .navbar {
+    position: relative;
+    margin: 8px;
+    padding: 0;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.596);
+  }
+  .contentpage {
+    display: block;
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 6px 1px whitesmoke;
+    margin: 10px;
+    padding: 20px;
+    background: #121212;
+  }
+
+  /* content */
+  .misc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .misc h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: "Lobster Two";
+  }
+  .misc a {
+    text-decoration: none;
+  }
+
+  .blog,
+  .websites {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(145deg, #131313, #101010);
+    box-shadow: 6px 6px 6px #090909, -6px -6px 6px #1b1b1b;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+  }
+
+  .blogcontent,
+  .webcontent {
+    border-radius: 10px;
+    background: #121212;
+    box-shadow: inset 5px 5px 10px #070707, inset -4px -4px 9px #1d1d1d;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 80%;
+  }
+
+  /* social media get in touch */
+  .social {
+    margin: auto;
+    position: absolute;
+    left: 2vw !important;
+  }
+  .social p {
+    text-shadow: 1px 1px black;
+    font-family: "Saira Stencil One", "Times New Roman", serif;
+    font-size: 23px;
+  }
+  .social i {
+    border-radius: 0.5%;
+    border: 0;
+    margin: 3px;
+    padding: 0;
+    text-decoration: none;
+    font-size: 28px;
+    color: whitesmoke;
+  }
+
+  #tagline {
+    display: none;
+  }
+  /* mobile menu */
+  .menu1 {
+    display: none;
+  }
+  .menu2 {
+    display: none;
+    position: absolute;
+    top: -1vw;
+    right: 1vw;
+    font-size: 2em;
+  }
+  .options2 a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0vw;
+    padding: 1.5vw 1vw;
+    font-size: 4vw;
+    color: white;
+    background: rgba(54, 54, 54, 0.603);
+    border-bottom: 1px solid rgb(105, 105, 105);
+  }
+  .options2 {
+    display: none;
+    position: absolute;
+    top: 2vw;
+    right: 10vw;
+    border: 2px solid white;
+  }
+  .dropdown {
+    display: none;
+  }
+
+  /* feedback page */
+  #he {
+    background-color: var(--ccolor);
+    border-radius: 10px;
+    text-align: center;
+  }
+  #he2 {
+    text-align: right;
+  }
+  #he3 {
+    margin-right: auto;
+  }
+}
+
+/* tablets and phones */
+/* 0-780px Screens */
+@media screen and (max-width: 780px) {
+  .container {
+    display: none;
+  }
+  .heading {
+    display: none;
+  }
+  .heading-mobile {
+    padding-top: 5px;
+    font-family: "saira stencil one", cursive;
+    text-align: center;
+    font-weight: 100;
+    margin: 15px;
+  }
+  .menu1 {
+    position: absolute;
+    right: 1vw;
+    bottom: 0vh;
+  }
+  .social p {
+    transform: translateX(0vw);
+  }
+  #tagline {
+    transform: translate(-10px, 0px);
+  }
+  #logotxt {
+    transform: translate(-5px, 13px);
+  }
+}
+
+/* desktop */
+/* 500px-4k */
+
+@media only screen and (min-width: 500px) {
+  body {
+    /* remove white spacing */
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+    background-image: url("./img src/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+  }
+  #logo {
+    width: 9vw;
+    height: 9vw;
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 0px;
+  }
+  #logo:hover {
+    background-color: black;
+    border-radius: 50%;
+  }
+  #logotxt {
+    width: 25vw;
+    height: 5vw;
+    position: relative;
+
+    top: 4vw;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+  }
+  #tagline {
+    position: relative;
+    bottom: -4vw;
+    text-indent: 9vw;
+    font-size: 2.1vw;
+    font-family: "Freckle Face", cursive;
+    padding: 0px;
+    margin-top: 1vw;
+  }
+  #invest {
+    color: green;
+  }
+  #kill {
+    color: crimson;
+  }
+  .navbar {
+    box-sizing: content-box;
+    margin: 8px;
+    padding: 0;
+    height: 19vw;
+    border-bottom: 4px double #ffffff;
+    background-color: rgba(0, 0, 0, 0.596);
+  }
+
+  .social {
+    position: absolute;
+    right: 14vw;
+    top: 15px;
+  }
+  .social p {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px black;
+    font-family: "Saira Stencil One", "Times New Roman", serif;
+    font-size: 2.3vw;
+    transform: translateX(-2vw);
+  }
+  .social i:hover {
+    color: black;
+    background: white;
+    box-shadow: 0px 0px 0px 8px rgb(255, 255, 255);
+  }
+  .social i {
+    border-radius: 0.5%;
+    border: 0;
+    margin: 3px;
+    padding: 0;
+    text-decoration: none;
+    font-size: 2.4vw;
+    color: whitesmoke;
+  }
+
+  button {
+    display: block;
+    color: black;
+    font-family: "Lobster Two", cursive;
+    background: rgba(255, 255, 255, 0.33);
+    border: 2px solid black;
+    font-size: 1.35em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 10px 15px;
+    min-width: 15vw;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  button:hover {
+    color: #fff;
+    box-shadow: inset 0px 55px black;
+  }
+
+  .contentpage {
+    display: block;
+    width: 85vw;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 3vw auto;
+    padding: 5px;
+    background-color: rgba(15, 15, 15, 0.541);
+    position: absolute;
+    left: 8%;
+  }
+
+
+  #gotop {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: "monoton", cursive;
+    font-size: 3vw;
+    text-align: center;
+    transform: translateY(10px);
+  }
+  #vikas {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+  }
+  .vertical-rule {
+    height: 100vh;
+    width: min-content;
+    border-radius: 50px;
+    background-color: white;
+  }
+  .heading-mobile {
+    display: none;
+  }
+  .heading {
+    padding-top: 5px;
+    font-size: 3.5vw;
+    font-family: "monoton", cursive;
+    text-align: center;
+    font-weight: 500;
+    margin: 15px;
+  }
+  #heading2 {
+    font-size: 36px;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    font-family: "Freckle Face", cursive;
+  }
+  #heading3 {
+    font-size: 36px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-family: "Freckle Face", cursive;
+  }
+
+  /* animations */
+
+  @keyframes games {
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  .misc {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .misc h3 {
+    margin-bottom: 1.4vw;
+    text-align: center;
+    font-size: 2.3vw;
+    transform: translateY(-10px);
+    font-family: "Lobster Two";
+  }
+  .blog,
+  .websites {
+    display: inline-block;
+    width: 31vw;
+  }
+
+  .blog-in,
+  .web-in {
+    display: inline-block;
+    margin: 2vw;
+    height: 15vw;
+    width: 10vw;
+    perspective: 600px;
+  }
+
+  .blog-in:hover .blogcontent{
+    box-shadow: 0px 0px 8px 10px rgba(173, 173, 173, 0.35);
+    transform: rotateX(180deg);
+  }
+  .web-in:hover .webcontent{
+    box-shadow: 0px 0px 8px 10px rgba(173, 173, 173, 0.35);
+    transform: rotateY(180deg);
+  }
+
+  .blogcontent,
+  .webcontent {
+    transition: all 0.6s ease-in-out;
+    box-shadow: 0px 0px 1px 3px rgba(255, 255, 255, 0.75);
+    transform-style: preserve-3d;
+    height: 15vw;
+    width: 12vw;
+  }
+  .misc a {
+    color:rgb(13, 180, 231);
+    text-decoration: none;
+  }
+  #blog1{
+    background: url("./img src/blog-back1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #blog2{
+    background: url("./img src/blog-back2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -73px;
+  }
+  .front,
+  .back {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+    padding-top:1vw;
+    text-align: center;
+    font-size: 1.75vw;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    backface-visibility: hidden;
+    background-image: url("./img src/blog-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .back {
+    line-height: initial;
+    background: rgb(0, 0, 0, 0.9);
+    font-size: 1.3vw;
+    transform: rotateX(180deg);
+  }
+  .webcontent .front {
+    background-image: url("./img src/web-back.jpg");
+  }
+  .webcontent .back {
+    transform: rotateY(180deg);
+  }
+
+
+  /* nav menu */
+
+  /* Menu for index */
+  .menu1 {
+    position: absolute;
+    right: 2vw;
+    bottom: 1vw;
+    margin-left: 0px;
+    width: fit-content;
+  }
+  .menu1 p:hover {
+    color: black;
+    background: white;
+  }
+  .menu1 p {
+    border: 1px solid white;
+    transform: scale(1.12);
+    padding: 0.5vw;
+    font-size: 1.4vw;
+    font-weight: lighter;
+    font-family: "Permanent Marker", cursive;
+    transition: all 0.3s;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+
+    padding-top: 0.2em;
+    width: 11vw;
+    height: 3vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: 1.8vw;
+  }
+  /* menu2 */
+  /* mobile menu */
+  .menu2 {
+    display: none;
+  }
+  .options2 {
+    display: none;
+  }
+
+  /* dropdown menu */
+  .dropdown {
+    font-family: "Permanent Marker", "cursive";
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: 1.3vw;
+    top: 1.3vw;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: 0;
+    font-size: 1.6vw;
+  }
+  .dropdown p {
+    transition: all 0.4s linear;
+    cursor: context-menu;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 4px;
+    margin: 0;
+    width: 12vw;
+  }
+  .dropdown:hover p {
+    /* box-shadow: inset 1px 40px white;  */
+    background-color: white;
+    color: black;
+  }
+  .dropdown a {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 1.5vw;
+    margin: 8px;
+    padding: 4px;
+  }
+  @keyframes one {
+    0% {
+      transform: translateX(100px);
+    }
+  }
+  @keyframes two {
+    0% {
+      transform: translateX(105px);
+    }
+  }
+  @keyframes three {
+    0% {
+      transform: translateX(110px);
+    }
+  }
+  .dropdown:hover #one {
+    animation: one 1s 1;
+    display: block;
+  }
+  .dropdown:hover #two {
+    animation: two 1.3s 1;
+    display: block;
+  }
+  .dropdown:hover #three {
+    animation: three 1.6s 1;
+    display: block;
+  }
+  .dropdown a:hover {
+    box-shadow: 50px 3px 14px -6px rgba(255, 255, 255, 0.5);
+    transform: translateX(-30px);
+  }
+  #he1 input {
+    text-align: center;
+    font-family: "Trebuchet MS", "cursive";
+    font-size: 20px;
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: -3px -3px 0px -1px rgba(88, 88, 88, 0.75);
+    color: whitesmoke;
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+  /* feedback page */
+  #he {
+    animation: intro 2s 1;
+    background-color: var(--ccolor);
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  #he1 {
+    animation: intro 2.5s 1;
+  }
+
+  #he2 {
+    animation: intro 3.1s 1;
+    text-align: right;
+  }
+
+  #he3 {
+    animation: intro 3.9s 1;
+    transform: translateY(25px);
+    margin-right: auto;
+    text-align: justify;
+  }
+ 
+}
