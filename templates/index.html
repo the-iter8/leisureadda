@@ -7,10 +7,7 @@
     <!-- linking BOOTSTRAP and its javascript-->
 
     <!-- link -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -25,19 +22,15 @@
       #myCarousel {
         width: 28vw;
       }
-
       .carousel-control {
         transition: 0.1s ease-in-out;
       }
-
       .carousel-control.left:hover {
         transform: translateX(-17px);
       }
-
       .carousel-control.right:hover {
         transform: translateX(17px);
       }
-
       .carousel-indicators {
         bottom: -5px;
       }
@@ -52,9 +45,12 @@
 
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename = 'Style.css') }}"
+      href="{{ url_for('static', filename = 'style.css') }}"
     />
-
+    <link
+      rel="stylesheet"
+      href="/Projects/Leisure Adda/static/style.css"
+    />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename = 'icon/css/all.css') }}"
@@ -309,7 +305,7 @@
 
           <div class="web-in">
             <div class="webcontent">
-              <div class="front">Patatap</div>
+              <div class="front" id = "web1">Patatap</div>
               <div class="back">
                 <a href="https://www.patatap.com/" target="_blank"
                   >Interactive website that responds to the keys on your keyboard with a sound and a brief animation. A fun way to unwind and relax.</a
@@ -320,7 +316,7 @@
 
           <div class="web-in">
             <div class="webcontent">
-              <div class="front">Not Always Right</div>
+              <div class="front" id = "web2">Not Always Right</div>
               <div class="back">
                 <a href="https://notalwaysright.com/" target="_blank"
                   >It’s a collection of stories about customers who just don’t know when to shut up. From funny to horrifying, there’s a little bit of it all here.</a
@@ -331,7 +327,7 @@
 
           <div class="web-in">
             <div class="webcontent">
-              <div class="front">A Soft Murmur</div>
+              <div class="front" id = "web3">A Soft Murmur</div>
               <div class="back">
                 <a href="https://asoftmurmur.com/" target="_blank"
                   >When taking a break from your usual work grind, set yourself up for true focus with A Soft Murmur.</a
@@ -341,20 +337,20 @@
           </div>
           <div class="web-in">
             <div class="webcontent">
-              <div class="front">Life Hacker</div>
+              <div class="front" id = "web4">Neal Fun</div>
               <div class="back">
-                <a href="https://lifehacker.com/" target="_blank"
-                  >It is a hub of productivity tips, tricks, and downloads. It's an archive of all the information it would be incredibly useful to know.</a
+                <a href="https://neal.fun/" target="_blank"
+                  >A site full of interactive games, that you might like.</a
                 >
               </div>
             </div>
           </div>
           <div class="web-in">
             <div class="webcontent">
-              <div class="front">Vsauce</div>
+              <div class="front" id = "web5">Staggering Beauty</div>
               <div class="back">
-                <a href="http://www.vsauce.com/" target="_blank"
-                  >You may be familiar with the name. This is one of the few websites on the internet that makes learning actually fun.</a
+                <a href="/static/web-content1.html" target="_blank"
+                  >Just a virtual bug that follows your cursor and goes crazy following it.</a
                 >
               </div>
             </div>
@@ -362,24 +358,25 @@
 
           <div class="web-in">
             <div class="webcontent">
-              <div class="front">I Waste So Much Time</div>
+              <div class="front" id = "web6" >Facebook Faces</div>
               <div class="back">
-                <a href="https://iwastesomuchtime.com/"
-                  >There are no long articles, just funny pictures with embedded texts. A very good time waster for short breaks.</a
+                <a href="http://www.thefacesoffacebook.com/" target="_blank"
+                  >
+                  More than 1.2 billion Facebook users profile pictures will get loaded when you simply open or visit this website on your browser.</a
                 >
               </div>
             </div>
           </div>
           <div class="web-in">
             <div class="webcontent">
-              <div class="front">Coming Soon</div>
+              <div class="front" id = "web7">The Time Lapse</div>
               <div class="back">
-                <a href="#"
-                  >Sorry to disappoint you, more content coming soon. Make sure to checkout website daily.</a
+                <a href="https://world.time.com/timelapse/" target = "_blank">The website has amazing time-lapse of satellite captured images of different places in few seconds.</a
                 >
               </div>
             </div>
           </div>
+
           <div class="web-in">
             <div class="webcontent">
               <div class="front">Coming Soon</div>

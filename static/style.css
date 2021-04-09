@@ -41,7 +41,6 @@
     text-align: center;
     transform: translateY(10px);
   }
-  
 
   .navbar {
     position: relative;
@@ -334,7 +333,6 @@
     left: 8%;
   }
 
-
   #gotop {
     display: block;
     text-decoration: none;
@@ -416,11 +414,11 @@
     perspective: 600px;
   }
 
-  .blog-in:hover .blogcontent{
+  .blog-in:hover .blogcontent {
     box-shadow: 0px 0px 8px 10px rgba(173, 173, 173, 0.35);
     transform: rotateX(180deg);
   }
-  .web-in:hover .webcontent{
+  .web-in:hover .webcontent {
     box-shadow: 0px 0px 8px 10px rgba(173, 173, 173, 0.35);
     transform: rotateY(180deg);
   }
@@ -434,20 +432,43 @@
     width: 12vw;
   }
   .misc a {
-    color:rgb(13, 180, 231);
+    color: rgb(13, 180, 231);
     text-decoration: none;
   }
-  #blog1{
+
+  #blog1 {
     background: url("./img src/blog-back1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
-  #blog2{
+  #blog2 {
     background: url("./img src/blog-back2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -73px;
   }
+  #web1 {
+    background: url("./img src/websites/patatap.jpg");
+  }
+  #web2 {
+    background: url("./img src/websites/notalwaysright.jpg");
+    background-position: -1vw 1vw;
+  }
+  #web3 {
+    background: url("./img src/websites/asoftmurmur.jpg");
+  }
+  #web4 {
+    background: url("./img src/websites/nealfun.jpeg");
+  }
+  #web5 {
+    background: url("./img src/websites/finger.jpeg");
+  }
+  #web6 {
+    background: url("./img src/websites/fb.jpg");
+  }
+  #web7{
+    background: url("./img src/websites/nature.jpg");
+  }
+
   .front,
   .back {
     position: absolute;
@@ -455,7 +476,7 @@
     width: 100%;
     height: 100%;
     padding: 1vw;
-    padding-top:1vw;
+    padding-top: 1vw;
     text-align: center;
     font-size: 1.75vw;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -472,11 +493,14 @@
   }
   .webcontent .front {
     background-image: url("./img src/web-back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-position: center; */
   }
   .webcontent .back {
     transform: rotateY(180deg);
   }
-
 
   /* nav menu */
 
@@ -625,5 +649,4 @@
     margin-right: auto;
     text-align: justify;
   }
- 
 }
