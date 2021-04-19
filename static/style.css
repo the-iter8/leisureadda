@@ -39,6 +39,7 @@
     color: white;
     font-size: 1.3em;
     text-align: center;
+    font-weight: 200;
     transform: translateY(10px);
   }
 
@@ -307,11 +308,11 @@
     font-family: "Lobster Two", cursive;
     background: rgba(255, 255, 255, 0.33);
     border: 2px solid black;
-    font-size: 1.35em;
+    font-size: 1.25em;
     letter-spacing: 2px;
     font-weight: 600;
     padding: 10px 15px;
-    min-width: 15vw;
+    min-width: 12.7vw;
     margin: 15px auto;
     cursor: pointer;
     transition: all 0.3s linear;
