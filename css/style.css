@@ -362,7 +362,7 @@
   .heading {
     padding-top: 5px;
     font-size: 3.5vw;
-    font-family: "monoton", cursive;
+    font-family: "Saira Stencil One", cursive;
     text-align: center;
     font-weight: 500;
     margin: 15px;
@@ -391,6 +391,7 @@
   }
 
   .misc {
+    font-family: "Saira Stencil One", "Times New Roman", serif;
     display: flex;
     justify-content: space-evenly;
   }
@@ -399,7 +400,6 @@
     text-align: center;
     font-size: 2.3vw;
     transform: translateY(-10px);
-    font-family: "Lobster Two";
   }
   .blog,
   .websites {
@@ -439,40 +439,40 @@
   }
 
   #blog1 {
-    background: url(".../img/blog-back1.jpg");
+    background: url("../img/blog-back1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
   #blog2 {
-    background: url(".../img/blog-back2.jpg");
+    background: url("../img/blog-back2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
   #web1 {
-    background: url(".../img/websites/patatap.jpg");
+    background: url("../img/websites/patatap.jpg");
   }
   #web2 {
-    background: url(".../img/websites/notalwaysright.jpg");
+    background: url("../img/websites/notalwaysright.jpg");
     background-position: -1vw 1vw;
   }
   #web3 {
-    background: url(".../img/websites/asoftmurmur.jpg");
+    background: url("../img/websites/asoftmurmur.jpg");
   }
   #web4 {
-    background: url(".../img/websites/nealfun.jpeg");
+    background: url("../img/websites/nealfun.jpeg");
   }
   #web5 {
-    background: url(".../img/websites/finger.jpeg");
+    background: url("../img/websites/finger.jpeg");
   }
   #web6 {
-    background: url(".../img/websites/fb.jpg");
+    background: url("../img/websites/fb.jpg");
   }
   #web7{
-    background: url(".../img/websites/nature.jpg");
+    background: url("../img/websites/nature.jpg");
   }
 
   .front,
-  .back {
+  .back  {
     position: absolute;
     cursor: pointer;
     width: 100%;
