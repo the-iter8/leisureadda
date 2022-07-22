@@ -439,36 +439,36 @@
   }
 
   #blog1 {
-    background: url("/img/blog-back1.jpg");
+    background: url("../img/blog-back1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
   #blog2 {
-    background: url("/img/blog-back2.jpg");
+    background: url("../img/blog-back2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
   #web1 {
-    background: url("/img/websites/patatap.jpg");
+    background: url("../img/websites/patatap.jpg");
   }
   #web2 {
-    background: url("/img/websites/notalwaysright.jpg");
+    background: url("../img/websites/notalwaysright.jpg");
     background-position: -1vw 1vw;
   }
   #web3 {
-    background: url("/img/websites/asoftmurmur.jpg");
+    background: url("../img/websites/asoftmurmur.jpg");
   }
   #web4 {
-    background: url("/img/websites/nealfun.jpeg");
+    background: url("../img/websites/nealfun.jpeg");
   }
   #web5 {
-    background: url("/img/websites/finger.jpeg");
+    background: url("../img/websites/finger.jpeg");
   }
   #web6 {
-    background: url("/img/websites/fb.jpg");
+    background: url("../img/websites/fb.jpg");
   }
   #web7 {
-    background: url("/img/websites/nature.jpg");
+    background: url("../img/websites/nature.jpg");
   }
 
   .front,
@@ -483,7 +483,7 @@
     font-size: 1.75vw;
     font-family: Georgia, "Times New Roman", Times, serif;
     backface-visibility: hidden;
-    background-image: url("/img/blog-back.jpg");
+    background-image: url("../img/blog-back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -494,7 +494,7 @@
     transform: rotateX(180deg);
   }
   .webcontent .front {
-    background-image: url("/img/web-back.jpg");
+    background-image: url("../img/web-back.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
